@@ -3,13 +3,15 @@ package edu.gatech.seclass;
 public class Debugger {
   public static void main(String[] args) {
     MyCustomString mcs = new MyCustomString();
-    mcs.setString("hello 90, bye 2");
+    mcs.setString("");
     System.out.println(mcs.getString());
-    System.out.println(mcs.countNumbers());
-    System.out.println(mcs.addDigits(4,false));
-    System.out.println(mcs.addDigits(4,true));
-    mcs.convertDigitsToNamesInSubstring(0,14);
-    System.out.println(mcs.getString());
+    mcs.convertDigitsToNamesInSubstring(1, 1);
+    System.out.println("Test string *onenine* long");
+    
+    //mycustomstring.setString("Test string 19 long");
+   // mycustomstring.convertDigitsToNamesInSubstring(0, 19);
+    //assertEquals("Test string *onenine* long", mycustomstring.getString());
+
     
     
        /* - For n=2 and reverse=false, "hello 90, bye 2" would be converted to "hello 12, bye 4".

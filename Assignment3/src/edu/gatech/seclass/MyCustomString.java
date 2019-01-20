@@ -39,6 +39,14 @@ public class MyCustomString implements MyCustomStringInterface {
   
   public String addDigits(int n, boolean reverse) {
     
+    if (myString == null) {
+      throw new NullPointerException();
+    }
+    
+    if (myString != null && (n>9 || n<=0)) {
+      throw new IllegalArgumentException();
+    }
+    
     boolean previousCharIsNum = false;
     char[] myStringCharArray = myString.toCharArray();
     int stringLength = myStringCharArray.length;
@@ -102,6 +110,16 @@ public class MyCustomString implements MyCustomStringInterface {
   
   public void convertDigitsToNamesInSubstring(int startPosition, int endPosition) {
     
+    if (myString == null) {
+      throw new NullPointerException();
+    }
+    else if (startPosition < 1 || startPosition > endPosition) {
+      throw new IllegalArgumentException();
+    }
+    else if (endPosition > myString.length()) {
+      throw new MyIndexOutOfBoundsException();
+    }
+    
     boolean previousCharIsNum = false, endSeq = false;
     char[] myStringCharArray = myString.toCharArray();
     int stringLength = myStringCharArray.length;
@@ -120,13 +138,13 @@ public class MyCustomString implements MyCustomStringInterface {
     key.add("eight");
     key.add("nine");
     
-    String beginString = myString.substring(0,startPosition);
-    String endString = myString.substring(endPosition+1,myString.length());
+    String beginString = myString.substring(0,startPosition-1);
+    String endString = myString.substring(endPosition,myString.length());
     
     ArrayList<String> newStringList = new ArrayList<String>();
     String newString = "";
     
-    for (int i = startPosition; i <= endPosition; i++) {
+    for (int i = startPosition-1; i < endPosition; i++) {
       currentChar = myStringCharArray[i];
       if (Character.isDigit(currentChar)) {
         currentChar = myStringCharArray[i];
@@ -138,7 +156,7 @@ public class MyCustomString implements MyCustomStringInterface {
           newStringList.add(key.get(Character.getNumericValue(currentChar)));
         }
         
-        endSeq = i==endPosition || (i<stringLength-1 && !Character.isDigit(myStringCharArray[i+1]));
+        endSeq = i==endPosition-1 || (i<stringLength-1 && !Character.isDigit(myStringCharArray[i+1]));
         if (endSeq) {
           newStringList.add("*");
         }
