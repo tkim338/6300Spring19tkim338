@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- You don't need to include android:required="false" if your app's
+     minSdkVersion is 28 or higher. -->
+        <uses-library android:name="android.test.runner"
+            android:required="false" />
+
         <activity android:name=".SDPEncryptorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,4 +24,4 @@
         </activity>
     </application>
 
-</manifest>
+    </manifest>

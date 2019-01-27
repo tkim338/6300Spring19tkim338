@@ -3,4 +3,13 @@
     <string name="error_message">Alphabetic Message Required</string>
     <string name="error_shift">Must Be Between 0 And 25</string>
 
+    <string name="message_label">Message:</string>
+    <string name="message_input_placeholder">(message)</string>
+    <string name="shift_label">Shift By:</string>
+    <string name="shift_input_placeholder">0</string>
+    <string name="rotate_label">Rotate By:</string>
+    <string name="rotate_input_placeholder">0</string>
+    <string name="encrypt_button_label">ENCRYPT</string>
+    <string name="encrypt_label">Encrypted Message:</string>
+    <string name="encrypt_output_placeholder">(encrypted message)</string>
 </resources>
