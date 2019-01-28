@@ -11,5 +11,5 @@
     <string name="rotate_input_placeholder">0</string>
     <string name="encrypt_button_label">ENCRYPT</string>
     <string name="encrypt_label">Encrypted Message:</string>
-    <string name="encrypt_output_placeholder">(encrypted message)</string>
+    <string name="encrypt_output_placeholder"></string>
 </resources>
