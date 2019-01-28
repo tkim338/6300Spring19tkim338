@@ -26,51 +26,59 @@ public class SDPEncryptorActivity extends AppCompatActivity {
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                boolean hasLetter = false;
                 for (int e = 0; e < s.length(); e++) {
-                    if (!Character.isLetter(s.charAt(e))) {
-                        messageTextView.setError("Alphabetic Message Required");
-                        return;
+                    if (Character.isLetter(s.charAt(e))) {
+                        hasLetter = true;
                     }
+                }
+                if (!hasLetter) {
+                    messageTextView.setError("Alphabetic Message Required");
+                    TextView messageOutputView = findViewById(R.id.resultText);
+                    messageOutputView.setText("");
                 }
             }
             @Override
             public void afterTextChanged(Editable s) { }
         });
-        shiftTextView.addTextChangedListener(new TextWatcher() {
+      /*  shiftTextView.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length()==0) {
+                if ((s.length()==0 || Integer.parseInt(s.toString())==0) && (rotateTextView.getText().length() == 0 || Integer.parseInt(rotateTextView.getText().toString())==0)) {
                     if (rotateTextView.getText().length() == 0) {
                         shiftTextView.setError("No Encryption Applied");
-                        return;
+                        TextView messageOutputView = findViewById(R.id.resultText);
+                        messageOutputView.setText("");
                     }
                 }
                 else {
                     int shiftInt = Integer.parseInt(s.toString());
                     if (shiftInt < 0 || shiftInt > 25) {
                         shiftTextView.setError("Must Be Between 0 And 25");
-                        return;
+                        TextView messageOutputView = findViewById(R.id.resultText);
+                        messageOutputView.setText("");
                     }
                 }
             }
             @Override
             public void afterTextChanged(Editable s) { }
-        });
-        rotateTextView.addTextChangedListener(new TextWatcher() {
+        }); */
+       /* rotateTextView.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length()==0 && shiftTextView.getText().length()==0) {
+                if ((s.length()==0 || Integer.parseInt(s.toString())==0) && (shiftTextView.getText().length() == 0 || Integer.parseInt(shiftTextView.getText().toString())==0)) {
                     rotateTextView.setError("No Encryption Applied");
-                    return;
+                    TextView messageOutputView = findViewById(R.id.resultText);
+                    messageOutputView.setText("");
                 }
             }
             @Override
             public void afterTextChanged(Editable s) { }
-        });
+        });*/
     }
 
     // encrypt message
@@ -82,36 +90,57 @@ public class SDPEncryptorActivity extends AppCompatActivity {
         TextView rotateTextView = findViewById(R.id.rotateNumber);
         TextView shiftTextView = findViewById(R.id.shiftNumber);
 
-        int rotateInt = Integer.parseInt(rotateTextView.getText().toString());
-        int shiftInt = Integer.parseInt(shiftTextView.getText().toString());
+        if ((shiftTextView.getText().length() == 0 || Integer.parseInt(shiftTextView.getText().toString()) == 0)
+                && (rotateTextView.getText().length() == 0 || Integer.parseInt(rotateTextView.getText().toString()) == 0)) {
+            shiftTextView.setError("No Encryption Applied");
+            rotateTextView.setError("No Encryption Applied");
+            TextView messageOutputView = findViewById(R.id.resultText);
+            messageOutputView.setText("");
+        } else {
+            int rotateInt = Integer.parseInt(rotateTextView.getText().toString());
+            int shiftInt = Integer.parseInt(shiftTextView.getText().toString());
 
-        int messageLength = inputMessage.length();
-        for (int i = 0; i < messageLength; i++) {
-            charIndex.add((i + messageLength - rotateInt) % messageLength);
-
-            int charAscii = (int) inputMessage.charAt(i);
-            String shiftedChar;
-            int ascii_A = 65;
-            int ascii_a = 97;
-            int shiftFactor;
-            if (charAscii >= ascii_a) { //lowercase
-                shiftFactor = ascii_a-1;
+            rotateTextView.setError(null);
+            if (shiftInt < 0 || shiftInt > 25) {
+                shiftTextView.setError("Must Be Between 0 And 25");
+                TextView messageOutputView = findViewById(R.id.resultText);
+                messageOutputView.setText("");
             }
             else {
-                shiftFactor = ascii_A-1;
+                shiftTextView.setError(null);
             }
-            shiftedChar = Character.toString((char)((( ((charAscii-shiftFactor) + shiftInt) -1) % 26)+1 + shiftFactor));
-            //Ciphertext = Ciphertext + String.valueOf(charAscii) + " " + String.valueOf((charAscii + shiftInt - shiftFactor)%26 + shiftFactor);
-            Ciphertext = Ciphertext + String.valueOf(shiftedChar);
-        }
 
-        String Ciphertext2 = "";
-        for (int j = 0; j < messageLength; j++) {
-            Ciphertext2 = Ciphertext2 + Ciphertext.substring((Integer)charIndex.get(j),(Integer)charIndex.get(j)+1);
-        }
+            int messageLength = inputMessage.length();
+            for (int i = 0; i < messageLength; i++) {
+                charIndex.add((i + messageLength - (rotateInt%messageLength)) % messageLength);
 
-        //Ciphertext = inputMessage;
-        TextView messageOutputView = findViewById(R.id.resultText);
-        messageOutputView.setText(Ciphertext2);
+                int charAscii = (int) inputMessage.charAt(i);
+                String shiftedChar;
+                int ascii_A = 65;
+                int ascii_a = 97;
+                int shiftFactor;
+                if (charAscii >= ascii_a) { //lowercase
+                    shiftFactor = ascii_a - 1;
+                } else {
+                    shiftFactor = ascii_A - 1;
+                }
+                if (Character.isLetter(inputMessage.charAt(i))) {
+                    shiftedChar = Character.toString((char) (((((charAscii - shiftFactor) + shiftInt) - 1) % 26) + 1 + shiftFactor));
+                } else {
+                    shiftedChar = inputMessage.substring(i, i + 1);
+                }
+                //Ciphertext = Ciphertext + String.valueOf(charAscii) + " " + String.valueOf((charAscii + shiftInt - shiftFactor)%26 + shiftFactor);
+                Ciphertext = Ciphertext + String.valueOf(shiftedChar);
+            }
+
+            String Ciphertext2 = "";
+            for (int j = 0; j < messageLength; j++) {
+                Ciphertext2 = Ciphertext2 + Ciphertext.substring((Integer) charIndex.get(j), (Integer) charIndex.get(j) + 1);
+            }
+
+            //Ciphertext = inputMessage;
+            TextView messageOutputView = findViewById(R.id.resultText);
+            messageOutputView.setText(Ciphertext2);
+        }
     }
 }

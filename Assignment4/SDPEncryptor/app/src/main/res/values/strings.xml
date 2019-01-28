@@ -4,7 +4,7 @@
     <string name="error_shift">Must Be Between 0 And 25</string>
 
     <string name="message_label">Message:</string>
-    <string name="message_input_placeholder">(message)</string>
+    <string name="message_input_placeholder"></string>
     <string name="shift_label">Shift By:</string>
     <string name="shift_input_placeholder">0</string>
     <string name="rotate_label">Rotate By:</string>
