@@ -1,0 +1,38 @@
+# File
+	Size:
+		Empty.				[single]
+		Not empty.
+
+# Filename
+	Presence of a file corresponding to the name:
+		Not present.		[single][error]
+		Present.
+	
+# Options
+	-a:
+		Present.			[property a]
+		Not present.
+	-s:
+		Present.			[property s]
+		Not present.
+	-r:
+		Present.			[property r]
+		Not present.
+	-k:
+		Present.			[property k][if !r]
+		Not present.
+	Parameters:
+		-a [integer]:
+			<0.				[error][if a]
+			0.				[if a]
+			1.				[if a]
+			maxint.			[if a]
+		-s <string>:
+			Empty.			[if s]
+			Not empty.		[if s]
+		-r <string>:
+			Empty.			[if r]
+			Not empty.		[if r]
+		-k <string>:
+			Empty.			[if k]
+			Not empty.		[if k]
