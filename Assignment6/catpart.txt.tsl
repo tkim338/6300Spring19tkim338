@@ -11,43 +11,16 @@ Test Case 3  		<error>
    -a [integer] :  <0
 
 
-Test Case 4  		(Key = 2.2.1.1.1.2.2.1.1.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Present
-   -k                                           :  Not present
-   -a [integer]                                 :  0
-   -s <string>                                  :  Empty
-   -r <string>                                  :  Empty
-   -k <string>                                  :  <n/a>
+Test Case 4  		<error>  (follows [if])
+   -s <string> :  Not present
 
 
-Test Case 5  		(Key = 2.2.1.1.1.2.2.1.2.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Present
-   -k                                           :  Not present
-   -a [integer]                                 :  0
-   -s <string>                                  :  Empty
-   -r <string>                                  :  Not empty
-   -k <string>                                  :  <n/a>
+Test Case 5  		<error>  (follows [if])
+   -r <string> :  Not present
 
 
-Test Case 6  		(Key = 2.2.1.1.1.2.2.2.1.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Present
-   -k                                           :  Not present
-   -a [integer]                                 :  0
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  Empty
-   -k <string>                                  :  <n/a>
+Test Case 6  		<error>  (follows [if])
+   -k <string> :  Not present
 
 
 Test Case 7  		(Key = 2.2.1.1.1.2.2.2.2.0.)
@@ -58,64 +31,116 @@ Test Case 7  		(Key = 2.2.1.1.1.2.2.2.2.0.)
    -r                                           :  Present
    -k                                           :  Not present
    -a [integer]                                 :  0
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  Not empty
-   -k <string>                                  :  <n/a>
-
-
-Test Case 8  		(Key = 2.2.1.1.1.2.3.1.1.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Present
-   -k                                           :  Not present
-   -a [integer]                                 :  1
    -s <string>                                  :  Empty
    -r <string>                                  :  Empty
    -k <string>                                  :  <n/a>
 
 
-Test Case 9  		(Key = 2.2.1.1.1.2.3.1.2.0.)
+Test Case 8  		(Key = 2.2.1.1.1.2.2.2.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Present
    -k                                           :  Not present
-   -a [integer]                                 :  1
+   -a [integer]                                 :  0
    -s <string>                                  :  Empty
    -r <string>                                  :  Not empty
    -k <string>                                  :  <n/a>
 
 
-Test Case 10 		(Key = 2.2.1.1.1.2.3.2.1.0.)
+Test Case 9  		(Key = 2.2.1.1.1.2.2.2.4.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Present
    -k                                           :  Not present
-   -a [integer]                                 :  1
+   -a [integer]                                 :  0
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 10 		(Key = 2.2.1.1.1.2.2.3.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  0
    -s <string>                                  :  Not empty
    -r <string>                                  :  Empty
    -k <string>                                  :  <n/a>
 
 
-Test Case 11 		(Key = 2.2.1.1.1.2.3.2.2.0.)
+Test Case 11 		(Key = 2.2.1.1.1.2.2.3.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Present
    -k                                           :  Not present
-   -a [integer]                                 :  1
+   -a [integer]                                 :  0
    -s <string>                                  :  Not empty
    -r <string>                                  :  Not empty
    -k <string>                                  :  <n/a>
 
 
-Test Case 12 		(Key = 2.2.1.1.1.2.4.1.1.0.)
+Test Case 12 		(Key = 2.2.1.1.1.2.2.3.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  0
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 13 		(Key = 2.2.1.1.1.2.2.4.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  0
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 14 		(Key = 2.2.1.1.1.2.2.4.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  0
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 15 		(Key = 2.2.1.1.1.2.2.4.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  0
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 16 		(Key = 2.2.1.1.1.2.3.2.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -128,7 +153,7 @@ Test Case 12 		(Key = 2.2.1.1.1.2.4.1.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 13 		(Key = 2.2.1.1.1.2.4.1.2.0.)
+Test Case 17 		(Key = 2.2.1.1.1.2.3.2.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -141,7 +166,20 @@ Test Case 13 		(Key = 2.2.1.1.1.2.4.1.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 14 		(Key = 2.2.1.1.1.2.4.2.1.0.)
+Test Case 18 		(Key = 2.2.1.1.1.2.3.2.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 19 		(Key = 2.2.1.1.1.2.3.3.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -154,7 +192,7 @@ Test Case 14 		(Key = 2.2.1.1.1.2.4.2.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 15 		(Key = 2.2.1.1.1.2.4.2.2.0.)
+Test Case 20 		(Key = 2.2.1.1.1.2.3.3.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -167,7 +205,176 @@ Test Case 15 		(Key = 2.2.1.1.1.2.4.2.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 16 		(Key = 2.2.1.1.2.1.2.1.0.0.)
+Test Case 21 		(Key = 2.2.1.1.1.2.3.3.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 22 		(Key = 2.2.1.1.1.2.3.4.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 23 		(Key = 2.2.1.1.1.2.3.4.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 24 		(Key = 2.2.1.1.1.2.3.4.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 25 		(Key = 2.2.1.1.1.2.4.2.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 26 		(Key = 2.2.1.1.1.2.4.2.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 27 		(Key = 2.2.1.1.1.2.4.2.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 28 		(Key = 2.2.1.1.1.2.4.3.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 29 		(Key = 2.2.1.1.1.2.4.3.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 30 		(Key = 2.2.1.1.1.2.4.3.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 31 		(Key = 2.2.1.1.1.2.4.4.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 32 		(Key = 2.2.1.1.1.2.4.4.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 33 		(Key = 2.2.1.1.1.2.4.4.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 34 		(Key = 2.2.1.1.2.1.2.2.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -180,7 +387,7 @@ Test Case 16 		(Key = 2.2.1.1.2.1.2.1.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 17 		(Key = 2.2.1.1.2.1.2.2.0.0.)
+Test Case 35 		(Key = 2.2.1.1.2.1.2.3.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -193,137 +400,98 @@ Test Case 17 		(Key = 2.2.1.1.2.1.2.2.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 18 		(Key = 2.2.1.1.2.1.3.1.0.0.)
+Test Case 36 		(Key = 2.2.1.1.2.1.2.4.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Not present
    -k                                           :  Present
-   -a [integer]                                 :  1
-   -s <string>                                  :  Empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 19 		(Key = 2.2.1.1.2.1.3.2.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Present
-   -a [integer]                                 :  1
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 20 		(Key = 2.2.1.1.2.1.4.1.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Present
-   -a [integer]                                 :  maxint
-   -s <string>                                  :  Empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 21 		(Key = 2.2.1.1.2.1.4.2.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Present
-   -a [integer]                                 :  maxint
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 22 		(Key = 2.2.1.1.2.2.2.1.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Not present
    -a [integer]                                 :  0
-   -s <string>                                  :  Empty
+   -s <string>                                  :  Equal to file
    -r <string>                                  :  <n/a>
    -k <string>                                  :  <n/a>
 
 
-Test Case 23 		(Key = 2.2.1.1.2.2.2.2.0.0.)
+Test Case 37 		(Key = 2.2.1.1.2.1.3.2.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  0
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 24 		(Key = 2.2.1.1.2.2.3.1.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  1
-   -s <string>                                  :  Empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 25 		(Key = 2.2.1.1.2.2.3.2.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  1
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 26 		(Key = 2.2.1.1.2.2.4.1.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Not present
+   -k                                           :  Present
    -a [integer]                                 :  maxint
    -s <string>                                  :  Empty
    -r <string>                                  :  <n/a>
    -k <string>                                  :  <n/a>
 
 
-Test Case 27 		(Key = 2.2.1.1.2.2.4.2.0.0.)
+Test Case 38 		(Key = 2.2.1.1.2.1.3.3.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Present
    -r                                           :  Not present
-   -k                                           :  Not present
+   -k                                           :  Present
    -a [integer]                                 :  maxint
    -s <string>                                  :  Not empty
    -r <string>                                  :  <n/a>
    -k <string>                                  :  <n/a>
 
 
-Test Case 28 		(Key = 2.2.1.2.1.2.2.0.1.0.)
+Test Case 39 		(Key = 2.2.1.1.2.1.3.4.0.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Not present
+   -k                                           :  Present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  <n/a>
+   -k <string>                                  :  <n/a>
+
+
+Test Case 40 		(Key = 2.2.1.1.2.1.4.2.0.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Not present
+   -k                                           :  Present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Empty
+   -r <string>                                  :  <n/a>
+   -k <string>                                  :  <n/a>
+
+
+Test Case 41 		(Key = 2.2.1.1.2.1.4.3.0.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Not present
+   -k                                           :  Present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  <n/a>
+   -k <string>                                  :  <n/a>
+
+
+Test Case 42 		(Key = 2.2.1.1.2.1.4.4.0.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Present
+   -r                                           :  Not present
+   -k                                           :  Present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  <n/a>
+   -k <string>                                  :  <n/a>
+
+
+Test Case 43 		(Key = 2.2.1.2.1.2.2.0.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -336,7 +504,7 @@ Test Case 28 		(Key = 2.2.1.2.1.2.2.0.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 29 		(Key = 2.2.1.2.1.2.2.0.2.0.)
+Test Case 44 		(Key = 2.2.1.2.1.2.2.0.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -349,33 +517,20 @@ Test Case 29 		(Key = 2.2.1.2.1.2.2.0.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 30 		(Key = 2.2.1.2.1.2.3.0.1.0.)
+Test Case 45 		(Key = 2.2.1.2.1.2.2.0.4.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Not present
    -r                                           :  Present
    -k                                           :  Not present
-   -a [integer]                                 :  1
+   -a [integer]                                 :  0
    -s <string>                                  :  <n/a>
-   -r <string>                                  :  Empty
+   -r <string>                                  :  Equal to file
    -k <string>                                  :  <n/a>
 
 
-Test Case 31 		(Key = 2.2.1.2.1.2.3.0.2.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Not present
-   -r                                           :  Present
-   -k                                           :  Not present
-   -a [integer]                                 :  1
-   -s <string>                                  :  <n/a>
-   -r <string>                                  :  Not empty
-   -k <string>                                  :  <n/a>
-
-
-Test Case 32 		(Key = 2.2.1.2.1.2.4.0.1.0.)
+Test Case 46 		(Key = 2.2.1.2.1.2.3.0.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -388,7 +543,7 @@ Test Case 32 		(Key = 2.2.1.2.1.2.4.0.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 33 		(Key = 2.2.1.2.1.2.4.0.2.0.)
+Test Case 47 		(Key = 2.2.1.2.1.2.3.0.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -401,7 +556,59 @@ Test Case 33 		(Key = 2.2.1.2.1.2.4.0.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 34 		(Key = 2.2.1.2.2.1.2.0.0.0.)
+Test Case 48 		(Key = 2.2.1.2.1.2.3.0.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Not present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  maxint
+   -s <string>                                  :  <n/a>
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 49 		(Key = 2.2.1.2.1.2.4.0.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Not present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  <n/a>
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 50 		(Key = 2.2.1.2.1.2.4.0.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Not present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  <n/a>
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 51 		(Key = 2.2.1.2.1.2.4.0.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Present
+   -s                                           :  Not present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  Not present
+   -s <string>                                  :  <n/a>
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 52 		(Key = 2.2.1.2.2.1.2.0.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -414,20 +621,7 @@ Test Case 34 		(Key = 2.2.1.2.2.1.2.0.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 35 		(Key = 2.2.1.2.2.1.3.0.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Not present
-   -r                                           :  Not present
-   -k                                           :  Present
-   -a [integer]                                 :  1
-   -s <string>                                  :  <n/a>
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 36 		(Key = 2.2.1.2.2.1.4.0.0.0.)
+Test Case 53 		(Key = 2.2.1.2.2.1.3.0.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
@@ -440,46 +634,20 @@ Test Case 36 		(Key = 2.2.1.2.2.1.4.0.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 37 		(Key = 2.2.1.2.2.2.2.0.0.0.)
+Test Case 54 		(Key = 2.2.1.2.2.1.4.0.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Present
    -s                                           :  Not present
    -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  0
+   -k                                           :  Present
+   -a [integer]                                 :  Not present
    -s <string>                                  :  <n/a>
    -r <string>                                  :  <n/a>
    -k <string>                                  :  <n/a>
 
 
-Test Case 38 		(Key = 2.2.1.2.2.2.3.0.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Not present
-   -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  1
-   -s <string>                                  :  <n/a>
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 39 		(Key = 2.2.1.2.2.2.4.0.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Present
-   -s                                           :  Not present
-   -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  maxint
-   -s <string>                                  :  <n/a>
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 40 		(Key = 2.2.2.1.1.2.0.1.1.0.)
+Test Case 55 		(Key = 2.2.2.1.1.2.0.2.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -492,7 +660,7 @@ Test Case 40 		(Key = 2.2.2.1.1.2.0.1.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 41 		(Key = 2.2.2.1.1.2.0.1.2.0.)
+Test Case 56 		(Key = 2.2.2.1.1.2.0.2.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -505,7 +673,20 @@ Test Case 41 		(Key = 2.2.2.1.1.2.0.1.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 42 		(Key = 2.2.2.1.1.2.0.2.1.0.)
+Test Case 57 		(Key = 2.2.2.1.1.2.0.2.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  Empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 58 		(Key = 2.2.2.1.1.2.0.3.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -518,7 +699,7 @@ Test Case 42 		(Key = 2.2.2.1.1.2.0.2.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 43 		(Key = 2.2.2.1.1.2.0.2.2.0.)
+Test Case 59 		(Key = 2.2.2.1.1.2.0.3.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -531,7 +712,59 @@ Test Case 43 		(Key = 2.2.2.1.1.2.0.2.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 44 		(Key = 2.2.2.1.2.1.0.1.0.0.)
+Test Case 60 		(Key = 2.2.2.1.1.2.0.3.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  Not empty
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 61 		(Key = 2.2.2.1.1.2.0.4.2.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 62 		(Key = 2.2.2.1.1.2.0.4.3.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Not empty
+   -k <string>                                  :  <n/a>
+
+
+Test Case 63 		(Key = 2.2.2.1.1.2.0.4.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  Equal to file
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 64 		(Key = 2.2.2.1.2.1.0.2.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -544,7 +777,7 @@ Test Case 44 		(Key = 2.2.2.1.2.1.0.1.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 45 		(Key = 2.2.2.1.2.1.0.2.0.0.)
+Test Case 65 		(Key = 2.2.2.1.2.1.0.3.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -557,33 +790,20 @@ Test Case 45 		(Key = 2.2.2.1.2.1.0.2.0.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 46 		(Key = 2.2.2.1.2.2.0.1.0.0.)
+Test Case 66 		(Key = 2.2.2.1.2.1.0.4.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
    -s                                           :  Present
    -r                                           :  Not present
-   -k                                           :  Not present
+   -k                                           :  Present
    -a [integer]                                 :  <n/a>
-   -s <string>                                  :  Empty
+   -s <string>                                  :  Equal to file
    -r <string>                                  :  <n/a>
    -k <string>                                  :  <n/a>
 
 
-Test Case 47 		(Key = 2.2.2.1.2.2.0.2.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Not present
-   -s                                           :  Present
-   -r                                           :  Not present
-   -k                                           :  Not present
-   -a [integer]                                 :  <n/a>
-   -s <string>                                  :  Not empty
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 48 		(Key = 2.2.2.2.1.2.0.0.1.0.)
+Test Case 67 		(Key = 2.2.2.2.1.2.0.0.2.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -596,7 +816,7 @@ Test Case 48 		(Key = 2.2.2.2.1.2.0.0.1.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 49 		(Key = 2.2.2.2.1.2.0.0.2.0.)
+Test Case 68 		(Key = 2.2.2.2.1.2.0.0.3.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
@@ -609,26 +829,26 @@ Test Case 49 		(Key = 2.2.2.2.1.2.0.0.2.0.)
    -k <string>                                  :  <n/a>
 
 
-Test Case 50 		(Key = 2.2.2.2.2.1.0.0.0.0.)
+Test Case 69 		(Key = 2.2.2.2.1.2.0.0.4.0.)
+   Size                                         :  Not empty
+   Presence of a file corresponding to the name :  Present
+   -a                                           :  Not present
+   -s                                           :  Not present
+   -r                                           :  Present
+   -k                                           :  Not present
+   -a [integer]                                 :  <n/a>
+   -s <string>                                  :  <n/a>
+   -r <string>                                  :  Equal to file
+   -k <string>                                  :  <n/a>
+
+
+Test Case 70 		(Key = 2.2.2.2.2.1.0.0.0.0.)
    Size                                         :  Not empty
    Presence of a file corresponding to the name :  Present
    -a                                           :  Not present
    -s                                           :  Not present
    -r                                           :  Not present
    -k                                           :  Present
-   -a [integer]                                 :  <n/a>
-   -s <string>                                  :  <n/a>
-   -r <string>                                  :  <n/a>
-   -k <string>                                  :  <n/a>
-
-
-Test Case 51 		(Key = 2.2.2.2.2.2.0.0.0.0.)
-   Size                                         :  Not empty
-   Presence of a file corresponding to the name :  Present
-   -a                                           :  Not present
-   -s                                           :  Not present
-   -r                                           :  Not present
-   -k                                           :  Not present
    -a [integer]                                 :  <n/a>
    -s <string>                                  :  <n/a>
    -r <string>                                  :  <n/a>

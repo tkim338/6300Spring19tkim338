@@ -20,19 +20,25 @@
 		Not present.
 	-k:
 		Present.			[property k][if !r]
-		Not present.
+		Not present.		[if r]
 	Parameters:
 		-a [integer]:
 			<0.				[error][if a]
 			0.				[if a]
-			1.				[if a]
 			maxint.			[if a]
+			Not present.	[if a]
 		-s <string>:
+			Not present.	[if s][error]
 			Empty.			[if s]
 			Not empty.		[if s]
+			Equal to file.	[if s]
 		-r <string>:
+			Not present.	[if r][error]
 			Empty.			[if r]
 			Not empty.		[if r]
+			Equal to file.	[if r]
 		-k <string>:
+			Not present.	[if k][error]
 			Empty.			[if k]
 			Not empty.		[if k]
+			Equal to file.	[if k]
