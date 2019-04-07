@@ -123,7 +123,7 @@ public class MainTest {
         String args[] = {"-a", "2", "-s", "d1atc", inputFile1.getPath()};
         Main.main(args);
 
-        String expected2 = "2 cat" + System.lineSeparator() + "1 dog";
+        String expected2 = "1 dog" + System.lineSeparator() + "2 cat";
 
         String actual2 = getFileContent(inputFile1.getPath());
 
@@ -173,7 +173,7 @@ public class MainTest {
         String args[] = {"-a", "-s", "orEO", inputFile5.getPath()};
         Main.main(args);
 
-        String expected5 = "Error: 123 xyz\nError: 567 abc\nLog: 123 abc\nLog: 567 abc";
+        String expected5 = "Error: 567 abc\nError: 123 xyz\nLog: 123 abc\nLog: 567 abc";
 
         String actual5 = getFileContent(inputFile5.getPath());
 

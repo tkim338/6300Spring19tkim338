@@ -4,6 +4,7 @@
     <list default="true" id="6728994a-4ad3-4d60-8f6e-014676d8d5aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,58 +13,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="301">
-                    <caret line="275" column="42" selection-start-line="275" selection-start-column="42" selection-end-line="275" selection-end-column="42" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="503">
-                    <caret line="229" column="16" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="16" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2464">
-              <caret line="94" column="40" lean-forward="true" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state relative-caret-position="452">
+              <caret line="485" column="24" lean-forward="true" selection-start-line="485" selection-start-column="24" selection-end-line="485" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5537#5538#0" expanded="true" />
-                <element signature="e#5661#5662#0" expanded="true" />
-                <element signature="e#5757#5758#0" expanded="true" />
-                <element signature="e#5849#5850#0" expanded="true" />
-                <element signature="e#5541#5542#0" expanded="true" />
-                <element signature="e#5558#5559#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6348#6349#0" expanded="true" />
+                <element signature="e#6472#6473#0" expanded="true" />
+                <element signature="e#6568#6569#0" expanded="true" />
+                <element signature="e#6503#6504#0" expanded="true" />
+                <element signature="e#6572#6573#0" expanded="true" />
+                <element signature="e#6785#6786#0" expanded="true" />
+                <element signature="e#6499#6500#0" expanded="true" />
+                <element signature="e#6520#6521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="233" column="24" lean-forward="true" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>output, tes</find>
+      <find>error</find>
+      <find>&quot;-k&quot;</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -71,8 +71,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java" />
+        <option value="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java" />
         <option value="$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java" />
+        <option value="$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java" />
       </list>
     </option>
   </component>
@@ -98,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -114,7 +116,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -122,7 +123,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554078535073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554595140179" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment7" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -142,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyMainTest.filesummaryTest16">
+  <component name="RunManager" selected="JUnit.All in IndividualProject">
     <configuration name="All in IndividualProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndividualProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -151,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMainTest.filesummaryTest16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.mainTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndividualProject" />
       <extension name="coverage">
         <pattern>
@@ -160,14 +161,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.gatech.seclass.filesummary" />
-      <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.filesummary.MyMainTest" />
-      <option name="METHOD_NAME" value="filesummaryTest16" />
+      <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.filesummary.MainTest" />
+      <option name="METHOD_NAME" value="mainTest9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMainTest.filesummaryTest21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMainTest.filesummaryTest31" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndividualProject" />
       <extension name="coverage">
         <pattern>
@@ -177,13 +178,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.gatech.seclass.filesummary" />
       <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.filesummary.MyMainTest" />
-      <option name="METHOD_NAME" value="filesummaryTest21" />
+      <option name="METHOD_NAME" value="filesummaryTest31" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMainTest.filesummaryTest7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMainTest.filesummaryTest33" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndividualProject" />
       <extension name="coverage">
         <pattern>
@@ -193,13 +194,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.gatech.seclass.filesummary" />
       <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.filesummary.MyMainTest" />
-      <option name="METHOD_NAME" value="filesummaryTest7" />
+      <option name="METHOD_NAME" value="filesummaryTest33" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMainTest.filesummaryTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMainTest.filesummaryTest35" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndividualProject" />
       <extension name="coverage">
         <pattern>
@@ -209,7 +210,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.gatech.seclass.filesummary" />
       <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.filesummary.MyMainTest" />
-      <option name="METHOD_NAME" value="filesummaryTest9" />
+      <option name="METHOD_NAME" value="filesummaryTest35" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyMainTest.filesummaryTest16" />
         <item itemvalue="JUnit.All in IndividualProject" />
-        <item itemvalue="JUnit.MyMainTest.filesummaryTest21" />
-        <item itemvalue="JUnit.MyMainTest.filesummaryTest9" />
-        <item itemvalue="JUnit.MyMainTest.filesummaryTest7" />
+        <item itemvalue="JUnit.MyMainTest.filesummaryTest35" />
+        <item itemvalue="JUnit.MyMainTest.filesummaryTest33" />
+        <item itemvalue="JUnit.MainTest.mainTest9" />
+        <item itemvalue="JUnit.MyMainTest.filesummaryTest31" />
       </list>
     </recent_temporary>
   </component>
@@ -239,35 +240,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyMainTest_filesummaryTest16 - 2019.03.31 at 20h 17m 09s.xml">
-      <configuration name="MyMainTest.filesummaryTest16" configurationId="JUnit" />
+    <history-entry file="MyMainTest_filesummaryTest31 - 2019.04.06 at 19h 42m 49s.xml">
+      <configuration name="MyMainTest.filesummaryTest31" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyMainTest_filesummaryTest16 - 2019.03.31 at 20h 17m 53s.xml">
-      <configuration name="MyMainTest.filesummaryTest16" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 18m 17s.xml">
+    <history-entry file="All_in_IndividualProject - 2019.04.06 at 19h 48m 01s.xml">
       <configuration name="All in IndividualProject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 20m 05s.xml">
+    <history-entry file="MainTest_mainTest9 - 2019.04.06 at 19h 49m 29s.xml">
+      <configuration name="MainTest.mainTest9" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_IndividualProject - 2019.04.06 at 19h 50m 43s.xml">
       <configuration name="All in IndividualProject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyMainTest_filesummaryTest21 - 2019.03.31 at 20h 20m 31s.xml">
-      <configuration name="MyMainTest.filesummaryTest21" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 20m 36s.xml">
+    <history-entry file="All_in_IndividualProject - 2019.04.06 at 19h 51m 09s.xml">
       <configuration name="All in IndividualProject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 21m 46s.xml">
+    <history-entry file="MyMainTest_filesummaryTest33 - 2019.04.06 at 19h 53m 41s.xml">
+      <configuration name="MyMainTest.filesummaryTest33" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyMainTest_filesummaryTest33 - 2019.04.06 at 19h 54m 20s.xml">
+      <configuration name="MyMainTest.filesummaryTest33" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_IndividualProject - 2019.04.06 at 19h 54m 25s.xml">
       <configuration name="All in IndividualProject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 22m 47s.xml">
+    <history-entry file="All_in_IndividualProject - 2019.04.06 at 19h 56m 54s.xml">
       <configuration name="All in IndividualProject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 24m 35s.xml">
-      <configuration name="All in IndividualProject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_IndividualProject - 2019.03.31 at 20h 24m 50s.xml">
-      <configuration name="All in IndividualProject" configurationId="JUnit" />
+    <history-entry file="MyMainTest_filesummaryTest35 - 2019.04.06 at 19h 57m 56s.xml">
+      <configuration name="MyMainTest.filesummaryTest35" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -281,8 +282,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -291,7 +293,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -325,35 +327,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="229" column="16" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MyMainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="275" column="42" selection-start-line="275" selection-start-column="42" selection-end-line="275" selection-end-column="42" />
+        <state relative-caret-position="452">
+          <caret line="485" column="24" lean-forward="true" selection-start-line="485" selection-start-column="24" selection-end-line="485" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/filesummary/test/edu/gatech/seclass/filesummary/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="233" column="24" lean-forward="true" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/filesummary/src/edu/gatech/seclass/filesummary/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2464">
-          <caret line="94" column="40" lean-forward="true" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+        <state relative-caret-position="350">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5537#5538#0" expanded="true" />
-            <element signature="e#5661#5662#0" expanded="true" />
-            <element signature="e#5757#5758#0" expanded="true" />
-            <element signature="e#5849#5850#0" expanded="true" />
-            <element signature="e#5541#5542#0" expanded="true" />
-            <element signature="e#5558#5559#0" expanded="true" />
+            <element signature="e#6348#6349#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6568#6569#0" expanded="true" />
+            <element signature="e#6503#6504#0" expanded="true" />
+            <element signature="e#6572#6573#0" expanded="true" />
+            <element signature="e#6785#6786#0" expanded="true" />
+            <element signature="e#6499#6500#0" expanded="true" />
+            <element signature="e#6520#6521#0" expanded="true" />
           </folding>
         </state>
       </provider>

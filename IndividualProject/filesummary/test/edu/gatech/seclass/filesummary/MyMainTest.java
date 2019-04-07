@@ -202,7 +202,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "-s", TEST_FILE1, inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals(TEST_FILE1, output);
+		assertEquals("2 cat" + System.lineSeparator() + "1 dog", output);
 	}
 
 	// Purpose: tests case where "-a" is present and "-s" is used with an empty string as an argument
@@ -213,7 +213,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "-s", "", inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals("Files differ!", TEST_FILE1, output);
+		assertEquals("Files differ!", "2 cat" + System.lineSeparator() + "1 dog", output);
 		assertEquals("Outputs differ!", "", outStream.toString().trim());
 	}
 
@@ -237,7 +237,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "0", "-s", TEST_FILE1, inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals(TEST_FILE1, output);
+		assertEquals("2 cat" + System.lineSeparator() + "1 dog", output);
 	}
 
 	// Purpose: tests case where "-a" is used with 0 as an argument and "-s" is used and empty string as an argument
@@ -248,7 +248,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "0", "-s", "", inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals("Files differ!", TEST_FILE1, output);
+		assertEquals("Files differ!", "2 cat" + System.lineSeparator() + "1 dog", output);
 		assertEquals("Outputs differ!", "", outStream.toString().trim());
 	}
 
@@ -306,7 +306,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "0", "-s", "", "-r", TEST_FILE1, inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals(TEST_FILE1, output);
+		assertEquals("2 cat" + System.lineSeparator() + "1 dog", output);
 	}
 
 	// Purpose: tests case where all params besides -k are used, and all are empty strings except -s
@@ -329,7 +329,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "0", "-s", "dogcat", "-r", TEST_FILE1, inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals("1 dog\r\n2 cat", output);
+		assertEquals("2 cat" + System.lineSeparator() + "1 dog", output);
 		assertEquals("Outputs differ!", "dog", outStream.toString().trim());
 	}
 
@@ -363,7 +363,7 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		String args[] = {"-a", "0", "-s", TEST_FILE1, "-r", TEST_FILE1, inputFile.getPath()};
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
-		assertEquals(TEST_FILE1, output);
+		assertEquals("2 cat" + System.lineSeparator() + "1 dog", output);
 	}
 
 	// Purpose: tests case where all params besides -k are used, and -a param is maxint and -r and -s are empty
@@ -430,6 +430,62 @@ Place all  of your tests in this class, optionally using MainTest.java as an exa
 		Main.main(args);
 		String output = getFileContent(inputFile.getPath());
 		assertEquals(TEST_FILE1, output);
+	}
+
+	// Purpose: To test functionality of -a alphabetizing by alphabetic characters only
+	// Frame #: Extra example; Deliverable 2 test
+	@Test
+	public void filesummaryTest31() throws Exception {
+		File inputFile = createInputFile(TEST_FILE2);
+		String args[] = {"-a", TEST_FILE2, inputFile.getPath()};
+		Main.main(args);
+		String output = getFileContent(inputFile.getPath());
+		assertEquals("Error: 567 abc\nError: 123 xyz\nLog: 123 abc\nLog: 567 abc", output);
+	}
+
+	// Purpose: To test functionality of -r integer param
+	// Frame #: Extra example; Deliverable 2 test
+	@Test
+	public void filesummaryTest32() throws Exception {
+		File inputFile = createInputFile(TEST_FILE2);
+		String args[] = {"-r", "Error", "2", TEST_FILE2, inputFile.getPath()};
+		Main.main(args);
+		String output = getFileContent(inputFile.getPath());
+		assertEquals("Log: 123 abc\nError: 123 xyz\nLog: 567 abc", output);
+	}
+
+	// Purpose: To test functionality of -k integer param
+	// Frame #: Extra example; Deliverable 2 test
+	@Test
+	public void filesummaryTest33() throws Exception {
+		File inputFile = createInputFile(TEST_FILE2);
+		String args[] = {"-k", "Error", "2", TEST_FILE2, inputFile.getPath()};
+		Main.main(args);
+		String output = getFileContent(inputFile.getPath());
+		assertEquals("Error: 567 abc", output);
+	}
+
+	// Purpose: To test functionality of -k negative integer param error thrown
+	// Frame #: Extra example; Deliverable 2 test
+	@Test
+	public void filesummaryTest34() throws Exception {
+		File inputFile = createInputFile(TEST_FILE2);
+		String args[] = {"-k", "Error", "-2", TEST_FILE2, inputFile.getPath()};
+		Main.main(args);
+		String output = getFileContent(inputFile.getPath());
+		assertEquals("Error: Integer parameter for -r and -k must be a positive integer.", errStream.toString().trim());
+		assertEquals("Error: 123 xyz\nError: 567 abc", output);
+	}
+
+	// Purpose: To test functionality of -n argument
+	// Frame #: Extra example; Deliverable 2 test
+	@Test
+	public void filesummaryTest35() throws Exception {
+		File inputFile = createInputFile(TEST_FILE2);
+		String args[] = {"-n", TEST_FILE2, inputFile.getPath()};
+		Main.main(args);
+		String output = getFileContent(inputFile.getPath());
+		assertEquals("Log: 123 abc1\nError: 123 xyz2\nError: 567 abc3\nLog: 567 abc4", output);
 	}
 
 }

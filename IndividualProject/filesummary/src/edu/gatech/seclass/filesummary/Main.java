@@ -62,6 +62,11 @@ class FileSum {
 				if (rkFlag) errorRK();
 				else processK(kIndex);
 			}
+
+			int nIndex = argList.indexOf("-n");
+			if (nIndex != -1) {
+				processN(nIndex);
+			}
 		}
 	}
 
@@ -141,11 +146,6 @@ class FileSum {
 	}
 
 	private void processA(int index) {
-		/*if (argList.size() <= index+1) {
-			errorParam("a");
-			argList.remove(index);
-		}
-		else {*/
 		boolean hasInt = false;
 			int param;
 			try {
@@ -161,7 +161,6 @@ class FileSum {
 				argList.remove(index);
 				if (hasInt)	argList.remove(index);
 			}
-		//}
 	}
 
 	private void processR(int index) {
@@ -171,7 +170,13 @@ class FileSum {
 		}
 		else {
 			String param = argList.get(index+1);
-			for (int i = 0; i < outputFileList.size(); i++) {
+			int startIndex = 0;
+			if (argList.size() > index + 2) {
+				int intParam = stringToInt(argList.get(index+2));
+				if (intParam > 0) startIndex = intParam;
+
+			}
+			for (int i = startIndex; i < outputFileList.size(); i++) {
 				if (outputFileList.get(i).contains(param)) {
 					outputFileList.remove(i);
 					i--;
@@ -189,25 +194,50 @@ class FileSum {
 		}
 		else {
 			String param = argList.get(index+1);
-			for (int i = 0; i < outputFileList.size(); i++) {
-				if (!outputFileList.get(i).contains(param)) {
-					outputFileList.remove(i);
-					i--;
+			int startIndex = 0;
+			if (argList.size() > index + 2) {
+				int intParam = stringToInt(argList.get(index+2));
+				if (intParam > 0) startIndex = intParam;
+			}
+			ArrayList<String> newOutputList = new ArrayList<>();
+			for (int i = startIndex; i < outputFileList.size(); i++) {
+				if (outputFileList.get(i).contains(param)) {
+					newOutputList.add(outputFileList.get(i));
 				}
 			}
+			outputFileList = newOutputList;
 			argList.remove(index);
 			argList.remove(index);
 		}
+	}
+
+	private int stringToInt(String s) {
+		// Method body sourced from: https://stackoverflow.com/questions/5585779/how-do-i-convert-a-string-to-an-int-in-java
+		int output = -1;
+		try {
+			output = Integer.parseInt(s);
+		}
+		catch (NumberFormatException e) {
+		}
+		if (output < 0) errorRKInt();
+		return output;
+	}
+
+	private void processN(int index) {
+		String newLine = "";
+		for (int i = 0; i < outputFileList.size(); i++) {
+			newLine = outputFileList.get(i) + (i+1);
+			outputFileList.set(i, newLine);
+		}
+		argList.remove(index);
 	}
 
 	public void printFile() {
 		// write output file to string for file output
 		String newFileString = "";
 		if (outputFileList.size() > 0) newFileString = outputFileList.get(0);
-		for (int i = 1; i < outputFileList.size(); i++) {//(String line : outputFileList) {
+		for (int i = 1; i < outputFileList.size(); i++) {
 			String line = outputFileList.get(i);
-			//newFileString = newFileString + "\r\n" + line;
-			//newFileString = newFileString + System.lineSeparator() + line;
 			newFileString = newFileString + lineBreak + line;
 		}
 		try {
@@ -233,14 +263,13 @@ class FileSum {
 		System.err.println("Error: -r and -k are mutually exclusive.");
 	}
 
+	private void errorRKInt() {
+		System.err.println("Error: Integer parameter for -r and -k must be a positive integer.");
+	}
+
 	private void errorNonexsistent() {
 		System.err.println("Error: file doesn't exist.");
 	}
-
-	/*public ArrayList<String> getArgList() { return argList; }
-	public ArrayList<String> getOutputFileList() { return outputFileList; }
-	public String getFilename() { return filename; }
-	public File getFile() { return file; }*/
 }
 
 class Sorter implements Comparator<String> {
@@ -250,7 +279,17 @@ class Sorter implements Comparator<String> {
 	}
 	@Override
 	public int compare(String a, String b) {
+		a = removeDigits(a);
+		b = removeDigits(b);
 		if (a.length() > index && b.length() > index) return a.substring(index).compareTo(b.substring(index));
 		else return 0;
+	}
+
+	private String removeDigits(String s) {
+		String newString = "";
+		for (int i = 0; i < s.length(); i++) {
+			if (Character.isLetter(s.charAt(i))) newString = newString + s.charAt(i);
+		}
+		return newString;
 	}
 }
