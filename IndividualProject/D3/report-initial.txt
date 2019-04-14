@@ -1,0 +1,386 @@
+JUnit version 4.12
+.E.E.E.E..E...E..E.E..E.E.E.E.E.E.E..E...E.E.E.E..E.E.E.E.E.E
+Time: 0.13
+There were 26 failures:
+1) filesummaryTest1(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #7. 
+Arguments used: [-a, -1, C:\Users\tyronejk\AppData\Local\Temp\junit8818764599482211887\junit7377543910201598158.tmp] 
+Original File: 
+1 dog
+2 cat 
+New File Content: 
+2 cat
+1 dog 
+Output: 
+2) filesummaryTest2(edu.gatech.seclass.filesummary.MyMainTest)
+org.junit.ComparisonFailure: expected:<[Error: -k string parameter must be given.]> but was:<[Usage: filesummary [-a [int]] [-r string [int] | -k string [int]] [-s string] [-n] <filename>]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.gatech.seclass.filesummary.MyMainTest.filesummaryTest2(MyMainTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+3) filesummaryTest3(edu.gatech.seclass.filesummary.MyMainTest)
+org.junit.ComparisonFailure: expected:<[Error: -r string parameter must be given.]> but was:<[Usage: filesummary [-a [int]] [-r string [int] | -k string [int]] [-s string] [-n] <filename>]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.gatech.seclass.filesummary.MyMainTest.filesummaryTest3(MyMainTest.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+4) filesummaryTest4(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #6. 
+Arguments used: [-s, C:\Users\tyronejk\AppData\Local\Temp\junit723920241022911831\junit1667108511016383052.tmp] 
+Original File: 
+1 dog
+2 cat 
+New File Content: 
+1 dog
+2 cat 
+Output: cat
+5) filesummaryTest6(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #8. 
+Arguments used: [-r, , C:\Users\tyronejk\AppData\Local\Temp\junit794362597918700540\junit6391621567366696595.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: *Method never completes*
+6) filesummaryTest9(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-r, 1 dog
+2 cat, -s, , C:\Users\tyronejk\AppData\Local\Temp\junit4698943955668907841\junit410447288721339606.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+7) filesummaryTest11(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, -s, , C:\Users\tyronejk\AppData\Local\Temp\junit685371436881621982\junit7711576878473083158.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+8) filesummaryTest12(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #4. 
+Arguments used: [-a, 2147483647, -s, 1 dog
+2 cat, C:\Users\tyronejk\AppData\Local\Temp\junit6141540289811596235\junit3996046696110882173.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: String index out of range: -2147483640
+9) filesummaryTest14(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 0, -s, , C:\Users\tyronejk\AppData\Local\Temp\junit6760057436856028256\junit5077299085357043810.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+10) filesummaryTest15(edu.gatech.seclass.filesummary.MyMainTest)
+org.junit.ComparisonFailure: Outputs differ! expected:<dog[
+2]> but was:<dog[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at edu.gatech.seclass.filesummary.MyMainTest.filesummaryTest15(MyMainTest.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+11) filesummaryTest16(edu.gatech.seclass.filesummary.MyMainTest)
+java.lang.AssertionError: Files differ! expected:<> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at edu.gatech.seclass.filesummary.MyMainTest.filesummaryTest16(MyMainTest.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+12) filesummaryTest17(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 0, -s, , -r, , C:\Users\tyronejk\AppData\Local\Temp\junit4375781960296302076\junit8341415410482922411.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+13) filesummaryTest18(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 0, -s, , -r, 1 dog, C:\Users\tyronejk\AppData\Local\Temp\junit2763983530950470967\junit6528026418659434485.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+14) filesummaryTest19(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 0, -s, , -r, 1 dog
+2 cat, C:\Users\tyronejk\AppData\Local\Temp\junit5023548351448968322\junit7831256902448445784.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+15) filesummaryTest20(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #8. 
+Arguments used: [-a, 0, -s, dog, -r, , C:\Users\tyronejk\AppData\Local\Temp\junit3437225219702182412\junit1842192403909954344.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: *Method never completes*
+16) filesummaryTest22(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #8. 
+Arguments used: [-a, 0, -s, 1 dog
+2 cat, -r, , C:\Users\tyronejk\AppData\Local\Temp\junit2282468806410185891\junit5194576426528534113.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: *Method never completes*
+17) filesummaryTest25(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 2147483647, -s, , -r, , C:\Users\tyronejk\AppData\Local\Temp\junit462475915000735869\junit90320867661985568.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+18) filesummaryTest26(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 2147483647, -s, , -r, dog, C:\Users\tyronejk\AppData\Local\Temp\junit6811566730506593692\junit4333465366514414872.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+19) filesummaryTest27(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #9. 
+Arguments used: [-a, 2147483647, -s, , -r, 1 dog
+2 cat, C:\Users\tyronejk\AppData\Local\Temp\junit3473840862056510690\junit1727225061292269238.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: Unclosed character class near index 2
+[\Q\E]+
+  ^
+20) filesummaryTest28(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #8. 
+Arguments used: [-a, 2147483647, -s, dog, -r, , C:\Users\tyronejk\AppData\Local\Temp\junit2778544811612874697\junit6431985042792750552.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: *Method never completes*
+21) filesummaryTest30(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #4. 
+Arguments used: [-a, 2147483647, -s, dogcat, -r, 1 dog
+2 cat, C:\Users\tyronejk\AppData\Local\Temp\junit2083309247508519364\junit6260189536559289257.tmp] 
+Original File: 
+1 dog
+2 cat 
+Throws Exception: String index out of range: -2147483640
+22) filesummaryTest31(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #7. 
+Arguments used: [-a, Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc, C:\Users\tyronejk\AppData\Local\Temp\junit6044736248388480994\junit926979419351471979.tmp] 
+Original File: 
+Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc 
+New File Content: 
+Error: 567 abc
+Error: 123 xyz
+Log: 123 abc
+Log: 567 abc 
+Output: 
+23) filesummaryTest32(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #7. 
+Arguments used: [-r, Error, 2, Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc, C:\Users\tyronejk\AppData\Local\Temp\junit6584262864152832863\junit2864569951871766399.tmp] 
+Original File: 
+Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc 
+New File Content: 
+Log: 123 abc
+Log: 567 abc 
+Output: 
+24) filesummaryTest33(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #7. 
+Arguments used: [-k, Error, 2, Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc, C:\Users\tyronejk\AppData\Local\Temp\junit7561801192300121815\junit7188349329101356704.tmp] 
+Original File: 
+Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc 
+New File Content: 
+Error: 123 xyz
+Error: 567 abc 
+Output: 
+25) filesummaryTest34(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #1. 
+Arguments used: [-k, Error, -2, Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc, C:\Users\tyronejk\AppData\Local\Temp\junit9216303016617444980\junit8602298788066195250.tmp] 
+Original File: 
+Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc 
+Throws Exception: ArrayIndexOutOfBoundsException
+26) filesummaryTest35(edu.gatech.seclass.filesummary.MyMainTest)
+edu.gatech.seclass.filesummary.SDPBugException: You found Bug #7. 
+Arguments used: [-n, Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc, C:\Users\tyronejk\AppData\Local\Temp\junit6510251679146106752\junit497160947387828657.tmp] 
+Original File: 
+Log: 123 abc
+Error: 123 xyz
+Error: 567 abc
+Log: 567 abc 
+New File Content: 
+1Log: 123 abc
+2Error: 123 xyz
+3Error: 567 abc
+4Log: 567 abc 
+Output: 
+
+FAILURES!!!
+Tests run: 35,  Failures: 26
+
